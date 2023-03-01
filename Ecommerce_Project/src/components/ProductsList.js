@@ -17,7 +17,8 @@ useEffect(() => {
           {products.map((product) => {
             return(
               <div className='col-4' key={product.id}>
-              <Product product={product} shoeButon={true}/>
+
+              <Product product={product} showButton={true}/>
           </div>
             )
           })}
