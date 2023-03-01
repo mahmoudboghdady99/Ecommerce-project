@@ -1,7 +1,7 @@
 import React from 'react'
-import { Params, useParams } from 'react-router-dom'
+import {  useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-
+import Product from './Product'
 export default function ProductDetails() {
 const [product, setProduct] =useState({})    
 useEffect(() => {
@@ -17,12 +17,11 @@ useEffect(() => {
     console.log(Params);
   return (
     <>
-    <h2>
-      product Details :  the Tilte is : {product.title} 
-    </h2>
-    <h2>
-    productId is : {Params.productId}
-    </h2>
+     <div className='row'>
+      <div className='col--sm-12 offset-lg-4 offset-md-4 col-md-4 col-lg-4 photo'>
+       <Product product={product} showButton={false}/>
+      </div>
+     </div>
     </>
   )
 }
