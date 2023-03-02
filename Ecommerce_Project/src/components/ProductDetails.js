@@ -18,7 +18,7 @@ useEffect(() => {
   return (
     <>
      <div className='row'>
-      <div className='col--sm-12 offset-lg-4 offset-md-4 col-md-4 col-lg-4 photo'>
+      <div className='col-sm-12 offset-lg-3 offset-md-3 col-md-6 col-lg-6 photo'>
        <Product product={product} showButton={false}/>
       </div>
      </div>

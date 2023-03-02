@@ -6,7 +6,7 @@ export default function Navbar() {
 <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container">
     <Link className="navbar-brand" to={'/'}>
-      Navbar
+      Logo
     </Link>
     <button
       className="navbar-toggler"
@@ -28,7 +28,7 @@ export default function Navbar() {
         </li>
         <li className="nav-item">
           <Link className="nav-link" to={'about'}>
-            Link
+            About
           </Link>
         </li>
      
